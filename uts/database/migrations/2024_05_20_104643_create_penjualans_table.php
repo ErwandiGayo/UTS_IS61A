@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('penjualans', function (Blueprint $table) {
             $table->id();
+            $table->string('nofak');
+            $table->string('nm_brg');
+            $table->date('tgl');
+            $table->integer('harga');
+            $table->integer('jum');
             $table->timestamps();
         });
     }
